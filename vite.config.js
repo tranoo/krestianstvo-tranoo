@@ -16,8 +16,8 @@ export default defineConfig(async (mode) => (
       polyfillDynamicImport: false,
       lib: {
         entry: './src/index.js',
-        name: 'krestianstvo',
-        fileName: (format) => `krestianstvo.${format}.js`
+        name: 'krestianstvo-tranoo',
+        fileName: (format) => `krestianstvo-tranoo.${format}.js`
       },
       rollupOptions: {
         // make sure to externalize deps that shouldn't be bundled

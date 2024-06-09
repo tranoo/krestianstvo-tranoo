@@ -54,13 +54,15 @@ import { io } from "socket.io-client";
             const host = hostURL ? hostURL : conf.defaultReflectorHost  
             connection.socket = io.connect(host, options) 
 
-        } catch (e) {}
+        } catch (e) {
+            console.error(e);
+        }
 
 
             if (connection.socket) {
 
                 connection.socket.on('connect_error', function (err) {
-                    console.log(err);
+                    console.error(`'${err}', code: '${err.code}'`);
                     var errDiv = document.createElement("div");
                     errDiv.innerHTML = "<div class='vwf-err' style='z-index: 10; position: absolute; top: 80px; right: 50px'>Connection error!" + err + "</div>";
                     document.querySelector('body').appendChild(errDiv);

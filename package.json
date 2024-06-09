@@ -1,22 +1,22 @@
 {
-  "name": "krestianstvo",
-  "version": "0.2.1",
+  "name": "krestianstvo-tranoo",
+  "version": "0.2.7",
   "files": [
     "dist"
   ],
   "private": false,
   "sideEffects": false,
   "type": "module",
-  "main": "dist/krestianstvo.umd.js",
-  "module": "dist/krestianstvo.es.js",
+  "main": "dist/krestianstvo-tranoo.umd.js",
+  "module": "dist/krestianstvo-tranoo.es.js",
   "exports": {
     ".": {
-      "import": "./dist/krestianstvo.es.js",
-      "require": "./dist/krestianstvo.umd.js"
+      "import": "./dist/krestianstvo-tranoo.es.js",
+      "require": "./dist/krestianstvo-tranoo.umd.js"
     }
   },
-  "description": "Krestianstvo | Solid JS",
-  "author": "Nikolay Suslov",
+  "description": "Krestianstvo, Tranoo fork | Solid JS",
+  "author": "Nikolay Suslov, Eugene Philippov",
   "scripts": {
     "build": "vite build",
     "start": "vite",
